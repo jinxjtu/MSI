@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#PBS -l walltime=5:00:00,nodes=1:ppn=24,mem=60gb
+#PBS -m abe
+#PBS -M li001252@umn.edu
+ulimit -s unlimited
+cd ~/slot
+module load ansys/19.2
+cfx5solve -batch -def 01task1.def -par-local -partition 24 -cont-from-config 001.res
