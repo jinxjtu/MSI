@@ -5,4 +5,4 @@
 ulimit -s unlimited
 cd ~/slot
 module load ansys/19.2
-cfx5solve -batch -def 01task1.def -par-local -partition 24 -cont-from-config 001.res
+cfx5solve -batch -def 01task1.def -par-local -partition 24 -cont-from-config 001.res -cont-from-config 001.res
